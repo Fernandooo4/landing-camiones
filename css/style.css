@@ -1,0 +1,197 @@
+/* Reset básico para limpiar márgenes predeterminados del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Variables de color para mantener el minimalismo */
+/* EQUIPO: Si quieren cambiar la paleta de colores, modifiquen esto */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --accent-color: #1a1a1a;
+    --gray-light: #f4f4f4;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--gray-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: gray;
+}
+
+/* Sección Hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--gray-light);
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* Modelos */
+.models-section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.models-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid var(--gray-light);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Contacto */
+.contact-section {
+    background-color: var(--gray-light);
+    padding: 80px 50px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+}

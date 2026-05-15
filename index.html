@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Venta de Camiones</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">CamionesPro</div>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#modelos">Modelos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>Potencia y carga para tu negocio</h1>
+        <p>Descubre nuestra nueva línea de camiones de alto rendimiento. Eficiencia comprobada para las rutas más exigentes.</p>
+        <a href="#modelos" class="btn">Ver Catálogo</a>
+    </div>
+</section>
+
+<section id="modelos" class="models-section">
+    <h2>Nuestros Modelos Destacados</h2>
+    <div class="grid-container">
+
+        <div class="card">
+            <img src="https://picsum.photos/400/250?random=1" alt="Camión de carga ligera">
+            <h3>Serie T-100 (Carga Ligera)</h3>
+            <p>Ideal para distribución urbana. Soporta hasta 3 toneladas.</p>
+            <button class="btn-outline">Saber más</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/400/250?random=2" alt="Camión de carga media">
+            <h3>Serie X-500 (Carga Media)</h3>
+            <p>Equilibrio perfecto entre potencia y consumo. Soporta hasta 10 toneladas.</p>
+            <button class="btn-outline">Saber más</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/400/250?random=3" alt="Camión de carga pesada">
+            <h3>Serie Titan V8 (Pesado)</h3>
+            <p>Diseñado para minería y rutas extremas. Capacidad de arrastre superior.</p>
+            <button class="btn-outline">Saber más</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="contacto" class="contact-section">
+    <h2>Cotiza tu flota hoy</h2>
+    <p>Déjanos tus datos y un asesor se comunicará contigo.</p>
+
+    <form id="contactForm">
+        <input type="text" id="nombre" placeholder="Tu Nombre o Empresa" required>
+        <input type="email" id="correo" placeholder="Correo Electrónico" required>
+        <textarea id="mensaje" rows="4" placeholder="¿Qué modelo te interesa?" required></textarea>
+        <button type="submit" class="btn">Enviar Consulta</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 CamionesPro. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

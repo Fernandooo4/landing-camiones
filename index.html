@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Venta de Camiones</title>
     <link rel="stylesheet" href="css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
 <body>
 
@@ -30,33 +34,121 @@
 <section id="modelos" class="models-section">
     <h2>Nuestros Modelos Destacados</h2>
     <div class="grid-container">
+        <div class="swiper mySwiper">
 
+            <div class="swiper-wrapper">
 
-        <div class="card">
-            <img src="imagenes/ligero.png" alt="Camión de carga ligera">
-           <!--  <img src="https://picsum.photos/400/250?random=1" alt="Camión de carga ligera">  -->
-            <h3>Serie T-100 (Carga Ligera)</h3>
-            <p>Ideal para distribución urbana. Soporta hasta 3 toneladas.</p>
-            <button class="btn-outline">Saber más</button>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="imagenes/ligero.png" alt="Camión de carga ligera">
+                        <h3>Serie T-100 (Carga Ligera)</h3>
+                        <p>Ideal para distribución urbana. Soporta hasta 3 toneladas.</p>
+                        <button class="btn-outline">Saber más</button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="imagenes/mediano.png" alt="Camión de carga media">
+                        <h3>Serie X-500 (Carga Media)</h3>
+                        <p>Equilibrio perfecto entre potencia y consumo. Soporta hasta 10 toneladas.</p>
+                        <button class="btn-outline">Saber más</button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="imagenes/pesado.png" alt="Camión de carga pesada">
+                        <h3>Serie Titan V8 (Pesado)</h3>
+                        <p>Diseñado para minería y rutas extremas. Capacidad de arrastre superior.</p>
+                        <button class="btn-outline">Saber más</button>
+                    </div>
+                </div>
+
+                <!-- NUEVOS CAMIONES -->
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="imagenes/ligero.png" alt="Camión ligero">
+                        <h3>Serie Urban X</h3>
+                        <p>Perfecto para entregas rápidas en ciudad.</p>
+                        <button class="btn-outline">Saber más</button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="imagenes/mediano.png" alt="Camión mediano">
+                        <h3>Serie Cargo Max</h3>
+                        <p>Gran capacidad de carga y bajo consumo.</p>
+                        <button class="btn-outline">Saber más</button>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="swiper-slide">
+                    <div class="card">
+
+                        <img src="imagenes/pesado.png" alt="Camión Heavy Max">
+
+                        <h3>Serie Heavy Max</h3>
+
+                        <p>
+                            Máxima potencia para transporte industrial pesado.
+                        </p>
+
+                        <button class="btn-outline">
+                            Saber más
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- CARD 7 -->
+                <div class="swiper-slide">
+                    <div class="card">
+
+                        <img src="imagenes/mediano.png" alt="Camión EcoTruck">
+
+                        <h3>Serie EcoTruck</h3>
+
+                        <p>
+                            Bajo consumo de combustible y gran eficiencia.
+                        </p>
+
+                        <button class="btn-outline">
+                            Saber más
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- CARD 8 -->
+                <div class="swiper-slide">
+                    <div class="card">
+
+                        <img src="imagenes/ligero.png" alt="Camión Rapid Cargo">
+
+                        <h3>Serie Rapid Cargo</h3>
+
+                        <p>
+                            Ideal para entregas rápidas y logística urbana.
+                        </p>
+
+                        <button class="btn-outline">
+                            Saber más
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BOTONES -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
         </div>
-
-        <div class="card">
-            <img src="imagenes/mediano.png" alt="Camión de carga media">
-           <!-- <img src="https://picsum.photos/400/250?random=2" alt="Camión de carga media">-->
-            <h3>Serie X-500 (Carga Media)</h3>
-            <p>Equilibrio perfecto entre potencia y consumo. Soporta hasta 10 toneladas.</p>
-            <button class="btn-outline">Saber más</button>
-        </div>
-
-        <div class="card">
-
-            <img src="imagenes/pesado.png" alt="Camión de carga pesada">
-            <!-- <img src="https://picsum.photos/400/250?random=3" alt="Camión de carga pesada"> -->
-            <h3>Serie Titan V8 (Pesado)</h3>
-            <p>Diseñado para minería y rutas extremas. Capacidad de arrastre superior.</p>
-            <button class="btn-outline">Saber más</button>
-        </div>
-
     </div>
 </section>
 
@@ -77,5 +169,36 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        loop: true,
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            },
+            1024: {
+                slidesPerView: 3
+            }
+        }
+    });
+</script>
 </body>
 </html>

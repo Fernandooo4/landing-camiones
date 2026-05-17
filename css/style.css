@@ -137,7 +137,8 @@ body {
     background: #fff;
     border: 1px solid var(--gray-light);
     padding: 20px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     text-align: left;
     transition: transform 0.3s ease;
 }
@@ -194,4 +195,26 @@ footer {
     padding: 20px;
     background-color: var(--accent-color);
     color: #fff;
+}
+
+.swiper {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.swiper-wrapper {
+    align-items: stretch;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: black;
+    font-weight: bold;
 }

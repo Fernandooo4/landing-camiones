@@ -59,19 +59,33 @@ body {
 
 /* Sección Hero */
 .hero {
-    height: 80vh;
+    height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--gray-light);
+
     padding: 0 20px;
+
+    /* IMAGEN DE FONDO */
+    background-image: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("../imagenes/banner2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 15px;
-    color: var(--accent-color);
+    color: white;
 }
 
 .hero p {
@@ -80,6 +94,8 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+
 }
 
 /* Botones */
@@ -136,10 +152,13 @@ body {
 .card {
     background: #fff;
     border: 1px solid var(--gray-light);
+
     padding: 20px;
-    width: 100%;
-    max-width: 300px;
+
+    width: 280px;
+
     text-align: left;
+
     transition: transform 0.3s ease;
 }
 
@@ -217,4 +236,180 @@ footer {
 .swiper-button-prev {
     color: black;
     font-weight: bold;
+}
+
+/* =========================
+   MARCAS
+========================= */
+
+.brands-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.brands-section h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.brands-section p {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.brandsSwiper {
+    margin-top: 50px;
+    width: 80%;
+}
+
+.brandsSwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandsSwiper img {
+    width: 320px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.brandsSwiper img:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.search-section {
+
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 60px auto;
+
+    background: black;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    position: relative;
+    z-index: 10;
+
+    text-align: center;
+}
+
+.search-section h2 {
+
+    color: white;
+
+    margin-bottom: 25px;
+
+    font-size: 1.8rem;
+
+    font-weight: 500;
+}
+
+.search-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.search-container select {
+
+    padding: 15px;
+
+    width: 300px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+}
+
+.search-btn {
+
+    background: #222;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 40px;
+
+    border-radius: 8px;
+
+    font-size: 1.1rem;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+
+    background: black;
+}
+
+/* =========================
+   SLIDER MODELOS
+========================= */
+
+.mySwiper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySwiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+.mySwiper .swiper-slide {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+/* BOTONES */
+
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+
+    color: black;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+
+}
+
+.mySwiper .swiper-button-prev {
+    left: 0;
+}
+
+.mySwiper .swiper-button-next {
+    right: 0;
 }

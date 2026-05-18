@@ -31,6 +31,102 @@
     </div>
 </section>
 
+<!-- MARCAS -->
+<section class="brands-section">
+
+    <h2>NUESTRAS MARCAS</h2>
+
+    <p>
+        Somos el concesionario peruano líder con más de 25 años
+        en la comercialización de vehículos livianos.
+    </p>
+
+    <p>
+        Contamos con las mejores soluciones de transporte:
+        camiones, volquetes, buses y minibuses.
+    </p>
+
+    <!-- SLIDER DE MARCAS -->
+    <div class="swiper brandsSwiper">
+
+        <div class="swiper-wrapper">
+
+            <!-- MARCA 1 -->
+            <div class="swiper-slide">
+                <img src="imagenes/kinglong.png" alt="King Long">
+            </div>
+
+            <!-- MARCA 2 -->
+            <div class="swiper-slide">
+                <img src="imagenes/yuejin.png" alt="Yuejin">
+            </div>
+
+            <!-- MARCA 3 -->
+            <div class="swiper-slide">
+                <img src="imagenes/incapower.png" alt="IncaPower">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="imagenes/forland.png" alt="Forland">
+            </div>
+
+            <!-- REPETIDAS PARA LOOP MÁS SUAVE -->
+
+            <div class="swiper-slide">
+                <img src="imagenes/kinglong.png" alt="King Long">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="imagenes/yuejin.png" alt="Yuejin">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="imagenes/incapower.png" alt="IncaPower">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="imagenes/forland.png" alt="Forland">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BUSCADOR -->
+<section class="search-section">
+
+    <h2>
+        ¡EMPIEZA TU NEGOCIO CON NOSOTROS Y ELIGE TU VEHÍCULO AQUÍ!
+    </h2>
+
+    <div class="search-container">
+
+        <!-- SELECT 1 -->
+        <select id="categoria">
+            <option>Camiones</option>
+            <option>Volquetes</option>
+            <option>Buses</option>
+            <option>Minibuses</option>
+        </select>
+
+        <!-- SELECT 2 -->
+        <select id="modelo">
+
+            <option>Selecciona un modelo</option>
+
+        </select>
+
+        <!-- BOTÓN -->
+        <button class="search-btn">
+            🔍 BUSCAR
+        </button>
+
+    </div>
+
+</section>
+
 <section id="modelos" class="models-section">
     <h2>Nuestros Modelos Destacados</h2>
     <div class="grid-container">
@@ -200,5 +296,39 @@
         }
     });
 </script>
+
+<script>
+
+    var brandsSwiper = new Swiper(".brandsSwiper", {
+
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+
+        speed: 4000,
+
+        breakpoints: {
+
+            0: {
+                slidesPerView: 1
+            },
+
+            768: {
+                slidesPerView: 2
+            },
+
+            1024: {
+                slidesPerView: 3
+            }
+        }
+    });
+
+</script>
+
 </body>
 </html>
